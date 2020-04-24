@@ -1,7 +1,7 @@
 {
   "homepage": "http://mmjenjen.github.io/about-me",
   "name": "about-me",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
