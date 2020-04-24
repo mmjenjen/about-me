@@ -5,7 +5,8 @@ import { ChangingImage } from '../components';
 
 export const MainPage = () => {
     const [language, setLanguage] = React.useState<'ENG' | 'JPN'>('ENG');
-    const constants = language === ENG ? englishConstants : japaneseConstants;
+    const isEnglish = language === 'ENG';
+    const constants = isEnglish ? englishConstants : japaneseConstants;
     return (
         <div className='main-page'>
             <div className='left-content'>
@@ -19,7 +20,8 @@ export const MainPage = () => {
                 <div className='icon-bar'>
                     <a href='https://www.linkedin.com/in/margaret-jennings-237626106'><FontAwesomeIcon icon={['fab', 'linkedin']} size={'2x'} className='icon'/></a>
                     <a href='https://github.com/mmjenjen'><FontAwesomeIcon icon={['fab', 'github']} size={'2x'} className='icon'/></a>
-                    <FontAwesomeIcon icon='language' size={'2x'} className='icon' onClick={() => { language === 'ENG' ? setLanguage('JPN') : setLanguage('ENG'); }}/>
+                    <FontAwesomeIcon icon='language' size={'2x'} className='icon' onClick={() => { isEnglish ? setLanguage('JPN') : setLanguage('ENG'); }}/>
+                    <span className='language-label'>{isEnglish ? '日本語' : 'ENG'}</span>
                 </div>
                 <h1 className='title'>{constants.myName}</h1>
                 <div className='content'>

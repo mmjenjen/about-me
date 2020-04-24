@@ -55,3 +55,8 @@
 .icon:hover {
   color: black;
 }
+
+.language-label {
+  position: relative;
+  top: -6px;
+}
