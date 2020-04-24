@@ -32,10 +32,6 @@
   margin-top: 15vh;
   width: 55%;
 }
-/* 
-.button-bar {
-  text-align: center;
-} */
 
 .changing-image {
   max-width: 100%;
@@ -46,7 +42,7 @@
 }
 
 .changing-image:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 .icon {
   color: gray;
