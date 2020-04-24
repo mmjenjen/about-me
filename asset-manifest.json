@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/about-me/static/css/main.2679f680.chunk.css",
+    "main.js": "/about-me/static/js/main.ed3b8a6d.chunk.js",
+    "main.js.map": "/about-me/static/js/main.ed3b8a6d.chunk.js.map",
+    "runtime-main.js": "/about-me/static/js/runtime-main.ebc97ae4.js",
+    "runtime-main.js.map": "/about-me/static/js/runtime-main.ebc97ae4.js.map",
+    "static/js/2.1e81a6da.chunk.js": "/about-me/static/js/2.1e81a6da.chunk.js",
+    "static/js/2.1e81a6da.chunk.js.map": "/about-me/static/js/2.1e81a6da.chunk.js.map",
+    "index.html": "/about-me/index.html",
+    "precache-manifest.9f92ff39066beb5989efd3d15221ac9d.js": "/about-me/precache-manifest.9f92ff39066beb5989efd3d15221ac9d.js",
+    "service-worker.js": "/about-me/service-worker.js",
+    "static/css/main.2679f680.chunk.css.map": "/about-me/static/css/main.2679f680.chunk.css.map",
+    "static/js/2.1e81a6da.chunk.js.LICENSE.txt": "/about-me/static/js/2.1e81a6da.chunk.js.LICENSE.txt",
+    "static/media/london.JPG": "/about-me/static/media/london.a5e1e492.JPG",
+    "static/media/paris.JPG": "/about-me/static/media/paris.aea2990e.JPG",
+    "static/media/sapporo.JPG": "/about-me/static/media/sapporo.02b4b471.JPG",
+    "static/media/showa2.JPG": "/about-me/static/media/showa2.4303d6d8.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ebc97ae4.js",
+    "static/js/2.1e81a6da.chunk.js",
+    "static/css/main.2679f680.chunk.css",
+    "static/js/main.ed3b8a6d.chunk.js"
+  ]
+}
