@@ -3,25 +3,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { englishConstants, japaneseConstants, ENG } from '../constants';
 import { ChangingImage } from '../components';
 
-export interface MainPageProps {
-    language: 'ENG' | 'JPN';
-}
-
-export const MainPage = (props: MainPageProps) => {
-    const { language } = props;
+export const MainPage = () => {
+    const [language, setLanguage] = React.useState<'ENG' | 'JPN'>('ENG');
     const constants = language === ENG ? englishConstants : japaneseConstants;
     return (
-        <div className={'main-page'}>
-            <div className={'left-content'}>
+        <div className='main-page'>
+            <div className='left-content'>
                 <ChangingImage />
             </div>
-            <div className={'right-content'}>
-                <h1>{constants.myName}</h1>
+            <div className='right-content'>
+                {/* <div className='button-bar'>
+                    <button onClick={() => { setLanguage('ENG'); }} disabled={language === 'ENG'}>ENG</button>
+                    <button onClick={() => { setLanguage('JPN'); }} disabled={language === 'JPN'}>日本語</button>
+                </div> */}
                 <div className='icon-bar'>
-                    <FontAwesomeIcon icon={['fab', 'linkedin']} size={'2x'}/> 
-                    <FontAwesomeIcon icon={['fab', 'github']} size={'2x'} />
+                    <a href='https://www.linkedin.com/in/margaret-jennings-237626106'><FontAwesomeIcon icon={['fab', 'linkedin']} size={'2x'} className='icon'/></a>
+                    <a href='https://github.com/mmjenjen'><FontAwesomeIcon icon={['fab', 'github']} size={'2x'} className='icon'/></a>
+                    <FontAwesomeIcon icon='language' size={'2x'} className='icon' onClick={() => { language === 'ENG' ? setLanguage('JPN') : setLanguage('ENG'); }}/>
                 </div>
-                <div className={'content'}>
+                <h1 className='title'>{constants.myName}</h1>
+                <div className='content'>
                     {constants.content}
                 </div>
             </div>
